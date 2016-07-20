@@ -11,6 +11,7 @@ end
 
 # 1. r
 
+# puts 'Reading with "r"'
 # file = open_file('r')
 # file.readlines.each do |line|
 #   p line
@@ -20,33 +21,43 @@ end
 
 # 2. r+
 
+# puts 'Reading/writing with "r+"'
 # file = open_file('r+')
+# p file.read(2)
 # file.write("!!!!")
-# p file.read
+# p file.read(2)
 # file.close
 
 
 # 3. w
 
+# puts 'Writing with "w"'
 # file = open_file('w')
 # file.write('Overwriting file!')
 # file.close
+
 # file = open_file('r')
-# p file.read
+# p file.read(2)
 # file.close
 
 
 # 4. w+
 
+# puts 'Reading/writing with "w+"'
 # file = open_file('w+')
-# p file.read
+# p file.read(2)
 # file.write('Overwriting file again!')
-# p file.read
+# p file.read(2)
+# file.close
+
+# file = open_file('r')
+# p file.read(2)
 # file.close
 
 
 # 5. a
 
+# puts 'Writing with "a"'
 # file = open_file('a')
 # file.write("aaaa")
 # file.close
@@ -54,10 +65,11 @@ end
 
 # 6. a+
 
+# puts 'Reading/writing with "a+"'
 # file = open_file('a+')
-# p file.read
+# p file.read(2)
 # file.write('Overwriting file again!')
-# p file.read
+# p file.read(2)
 # file.close
 
 
